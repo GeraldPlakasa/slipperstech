@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Hello, world!</title>
+    <title>SlippersTech</title>
   </head>
   <body>
   	<nav style="background-color: #19D1A3;">
@@ -19,19 +19,9 @@
 					<img src="img/Logo.png" alt="" width="40%">
 				</a>
   			</div>
-  			<div class="col-4 animasi-teks">
-  				<div class="bar bar-green">
-  					<div class="option">HOME</div>
-  					<div class="option">ABOUT</div>
-  					<!-- <a class="option p-2 rounded-pill px-3" href="#" style="text-decoration: none; font-weight: bold; background-color: white; color: #19D1A3;">HOME</a>
-  					<a class="option text-white p-2" href="#" style="text-decoration: none; font-weight: bold;">ABOUT</a> -->
-			    </div>
-			    <div class="bar-outer">
-				    <div class="bar bar-white">
-	  					<div class="option">HOME</div>
-	  					<div class="option">ABOUT</div>
-				    </div>
-			    </div>
+  			<div class="col-4">
+  				<a class="p-2 rounded-pill px-3" href="#" style="text-decoration: none; font-weight: bold; background-color: white; color: #19D1A3;">HOME</a>
+  				<a class="text-white p-2" href="#" style="text-decoration: none; font-weight: bold;">ABOUT</a>
   			</div>
   			<div class="col-4">
   				<form class="d-flex">
@@ -43,32 +33,54 @@
   	</nav>
   	
 
-    <div class="container">
-    	
+    <div class="container mt-3">
+    	<div class="row" style="height: 40px; background-color: #C4C4C4;">
+   		a
+    	</div>
+
+    	<div class="row mt-4">
+    		<div class="col-md-7 rounded" style="height: 400px; background-color: #C4C4C4;">
+    			<p>a</p>
+    		</div>
+    		<div class="col-md-5 rounded" style="height: 400px; background-color: #C4C4C4;">b</div>
+    	</div>
+
+    	<h3 class="mt-3" style="font-family: Montserrat; font-weight: bold; color: #19D1A3">Trending</h3>
+
+    	<div class="row mt-2" style="height: 300px; background-color: #C4C4C4;">
+   		a
+    	</div>
+
+    	<h3 class="mt-3 text-center" style="font-family: Montserrat; font-weight: bold; color: #19D1A3">Kata Tokoh</h3>
+
+    	<div class="row mt-4">
+    		<div class="col-md-6 rounded" style="height: 350px; background-color: #C4C4C4;">
+    			<p>a</p>
+    		</div>
+    		<div class="col-md-6 rounded" style="height: 350px; background-color: #C4C4C4;">b</div>
+    	</div>
+
+    	<h4 class="mt-3" style="font-family: Montserrat; font-weight: bold; color: #19D1A3">Hi, Slipperians <br> Artikel Pilihan Untukmu Hari Ini</h4>
+
+    	<div class="row mt-4">
+    		<div class="col-md-6 rounded" style="height: 650px; background-color: #C4C4C4;">
+    			<p>a</p>
+    		</div>
+    		<div class="col-md-6 rounded" style="height: 650px; background-color: #C4C4C4;">b</div>
+    	</div>
     </div>
+    <div class="mt-3 text-center text-white" style="background-color: #058694;  height: 200px">
+    	<p class="fw-lighter fst-italic" style="font-family: Montserrat; font-size: 70px;">FOOTER</p>
+    </div>
+    <div class="text-center text-white p-2" style="background-color: #066370;">
+    	<p style="font-family: Montserrat; font-size: 10px;">Privacy Policy . Sitemap . Support . 2022 Slippers Tech</p>
+    </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/b3ffef7c96.js" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-    	const barOuter = document.querySelector(".bar-outer");
-		const options = document.querySelectorAll(".bar-green .option");
-		let current = 1;
-		options.forEach((option, i) => (option.index = i + 1));
-		options.forEach(option =>
-		                option.addEventListener("click", function() {
-		  barOuter.className = "bar-outer";
-		  barOuter.classList.add(`pos${option.index}`);
-		  if (option.index > current) {
-		    barOuter.classList.add("right");
-		  } else if (option.index < current) {
-		    barOuter.classList.add("left");
-		  }
-		  current = option.index;
-		}));
-    </script>
     
   </body>
 </html>
