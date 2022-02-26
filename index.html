@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  	<nav style="background-color: #19D1A3;">
+  		<div class="row p-3 align-items-center">
+  			<div class="col-4">
+  				<a class="navbar-brand" href="#">
+					<img src="img/Logo.png" alt="" width="40%">
+				</a>
+  			</div>
+  			<div class="col-4 animasi-teks">
+  				<div class="bar bar-green">
+  					<div class="option">HOME</div>
+  					<div class="option">ABOUT</div>
+  					<!-- <a class="option p-2 rounded-pill px-3" href="#" style="text-decoration: none; font-weight: bold; background-color: white; color: #19D1A3;">HOME</a>
+  					<a class="option text-white p-2" href="#" style="text-decoration: none; font-weight: bold;">ABOUT</a> -->
+			    </div>
+			    <div class="bar-outer">
+				    <div class="bar bar-white">
+	  					<div class="option">HOME</div>
+	  					<div class="option">ABOUT</div>
+				    </div>
+			    </div>
+  			</div>
+  			<div class="col-4">
+  				<form class="d-flex">
+  					<input class="form-control" type="text" placeholder="Search.." name="search">
+  					<button class="btn " type="submit" style="position: absolute; right: 1%;"><i class="fa fa-search" style="color: #19D1A3"></i></button>
+		      	</form>
+  			</div>
+  		</div>
+  	</nav>
+  	
+
+    <div class="container">
+    	
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b3ffef7c96.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	const barOuter = document.querySelector(".bar-outer");
+		const options = document.querySelectorAll(".bar-green .option");
+		let current = 1;
+		options.forEach((option, i) => (option.index = i + 1));
+		options.forEach(option =>
+		                option.addEventListener("click", function() {
+		  barOuter.className = "bar-outer";
+		  barOuter.classList.add(`pos${option.index}`);
+		  if (option.index > current) {
+		    barOuter.classList.add("right");
+		  } else if (option.index < current) {
+		    barOuter.classList.add("left");
+		  }
+		  current = option.index;
+		}));
+    </script>
+    
+  </body>
+</html>
