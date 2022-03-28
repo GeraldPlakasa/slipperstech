@@ -6,3 +6,11 @@
     height: 40px;
     border-radius: 10px;
 }
+
+.warna-primer{
+    color: #19D1A3;
+}
+
+.bg-warna-primer{
+    background-color: #19D1A3;
+}
