@@ -14,3 +14,7 @@
 .bg-warna-primer{
     background-color: #19D1A3;
 }
+
+.konten:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
