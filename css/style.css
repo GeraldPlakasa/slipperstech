@@ -15,6 +15,10 @@
     background-color: #19D1A3;
 }
 
+.konten:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .carousel-indicators button {
     height: 10px !important;
     width: 10px !important;
@@ -44,3 +48,4 @@
 ::-webkit-scrollbar-thumb:hover {
   	background: #13a07d; 
   }
+
